@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gulp</title>
+	<!-- ============== BOX ICONS ============== -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- ============== CSS ============== -->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	@@include('_header.html')
+
+	<main class="l-main">
+		<!-- ============== HOME ============== -->
+		<section class="home" id="home">
+
+			<div class="home__container bd-container bd-grid">
+				<div class="home__img">
+					<img src="images/home.png" alt="home">
+				</div>
+
+				<div class="home__date">
+					<h1 class="home__title">Send A Gift For Christmas</h1>
+					<p class="home__description">In these end of the year holidays send a gift to your loved one and share the
+						happiness at
+						Christmas.</p>
+					<a href="#" class="button">Get Started</a>
+				</div>
+			</div>
+
+		</section>
+		<!-- ============== SHARE ============== -->
+		<section class="share section bd-container" id="share">
+			<div class="share__container bd-grid">
+
+				<div class="share__date">
+					<h2 class="section-title-center">Sharing Is The Best Gift <br> You Can Give</h2>
+					<p class="share__description">Sharing these holidays is the best gift you can give, give a present or share
+						your love with the people you love the
+						most and celebrate with great happiness.</p>
+					<a href="#" class="button">Send a Gift</a>
+				</div>
+
+				<div class="share__img">
+					<img src="images/shared.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<!-- ============== DECORATION ============== -->
+		<section class="decoration section bd-container" id="decorations">
+
+			<h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
+
+			<div class="decoration__container bd-grid">
+
+				<div class="decoration__data">
+					<img src="images/decoration1.png" alt="decoration1">
+					<h3 class="decoration__title">Christmas Bells</h3>
+					<a href="#" class="button button-link">Go Shopping</a>
+				</div>
+
+				<div class="decoration__data">
+					<img src="images/decoration2.png" alt="decoration2">
+					<h3 class="decoration__title">Christmas Candies</h3>
+					<a href="#" class="button button-link">Go Shopping</a>
+				</div>
+
+				<div class="decoration__data">
+					<img src="images/decoration3.png" alt="decoration3">
+					<h3 class="decoration__title">Christmas Trees</h3>
+					<a href="#" class="button button-link">Go Shopping</a>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ============== ACCESSORY ============== -->
+		<section class="accessory section bd-container" id="accessory">
+			<h2 class="section-title">New Christmas <br> Accessories</h2>
+
+			<div class="accessory__container bd-grid">
+
+				<div class="accessory__content">
+					<img src="images/accessory1.png" alt="accessory1">
+					<h3 class="accessory__title">Snow Globe</h3>
+					<span class="accessory__category">Accessory</span>
+					<span class="accessory__price">$9.45</span>
+					<a href="#" class="accessory__button button"><i class='bx bx-heart'></i></a>
+				</div>
+
+				<div class="accessory__content">
+					<img src="images/accessory2.png" alt="accessory1">
+					<h3 class="accessory__title">Candy</h3>
+					<span class="accessory__category">Accessory</span>
+					<span class="accessory__price">$2.52</span>
+					<a href="#" class="accessory__button button"><i class='bx bx-heart'></i></a>
+				</div>
+
+				<div class="accessory__content">
+					<img src="images/accessory3.png" alt="accessory1">
+					<h3 class="accessory__title">Angel</h3>
+					<span class="accessory__category">Accessory</span>
+					<span class="accessory__price">$13.12</span>
+					<a href="#" class="accessory__button button"><i class='bx bx-heart'></i></a>
+				</div>
+
+				<div class="accessory__content">
+					<img src="images/accessory4.png" alt="accessory1">
+					<h3 class="accessory__title">Sphere</h3>
+					<span class="accessory__category">Accessory</span>
+					<span class="accessory__price">$4.25</span>
+					<a href="#" class="accessory__button button button"><i class='bx bx-heart'></i></a>
+				</div>
+
+				<div class="accessory__content">
+					<img src="images/accessory5.png" alt="accessory1">
+					<h3 class="accessory__title">Surprise Gift</h3>
+					<span class="accessory__category">Accessory</span>
+					<span class="accessory__price">$7.99</span>
+					<a href="#" class="accessory__button button button"><i class='bx bx-heart'></i></a>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ============== SEND GIFT ============== -->
+		<section class="send section">
+			<div class="send__container bd-container bd-grid">
+
+				<div class="send__content">
+					<h2 class="section-title send__title">Send Gift Now</h2>
+					<p class="send__description">Start giving away before the holidays are over. Write the home address of the person who will send the gift.</p>
+					<form action="">
+						<div class="send__direction">
+							<input type="text" class="send__input" placeholder="House address">
+							<a href="#" class="button">Send</a>
+						</div>
+					</form>
+				</div>
+
+				<div class="send__img">
+					<img src="images/send.png" alt="send">
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- ============== FOOTER ============== -->
+	@@include('_footer.html')
+
+
+	<!-- ============== SCROLL REVEAL ============== -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!-- ============== SCRIPT JS ============== -->
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

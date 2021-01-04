@@ -1,0 +1,113 @@
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    &__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      padding: 2.5rem 0 0;
+      text-align: center;
+      background-color: $body-color;
+      transition: 0.4s;
+      box-shadow: 0 0 4px rgba(#000, 0.1);
+      border-radius: 2rem;
+      z-index: $z-fixed;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    &-item {
+      margin-bottom: $mb-3;
+    }
+    &-link {
+      transition: 0.3s;
+      &:hover {
+        color: $first-color;
+      }
+    }
+  }
+
+  &__logo,
+  &__toggle,
+  &__list-link {
+    color: $title-color;
+    font-weight: $font-semi-bold;
+  }
+
+  &__logo {
+    &:hover {
+      color: $first-color;
+    }
+  }
+
+  &__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+
+/* Show menu */
+.show-menu{
+	top: calc(3rem + 1rem) !important;
+}
+
+/* Show menu */
+.active{
+	&-link{
+		position: relative;	
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: -.75rem;
+			left: 45%;
+			width: 5px;
+			height: 5px;
+			background-color: $title-color;
+			border-radius: 50%;
+		}
+	}
+}
+
+/* Change background header */
+.scroll-header{
+	box-shadow: 0 1px 4px rgba(#000, 0.1);
+}
+/* Scroll top */
+.scrolltop{
+	position: fixed;
+	right: 1rem;
+	bottom: -20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .3rem;
+	background-color: rgba(218,37,53,.5);
+	border-radius: .4rem;
+	z-index: $z-tooltip;
+	transition: .4s;
+	visibility: hidden;
+	&:hover{
+		background-color: $first-color;
+	}
+	&__icon{
+		font-size: 1.5rem;
+		color: $body-color;
+	}
+}
+
+.show-scroll{
+	visibility: visible;
+	bottom: 1.5rem;
+}
